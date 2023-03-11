@@ -3,3 +3,5 @@ helloWord
 target/
 
 *.o
+*.swp
+
