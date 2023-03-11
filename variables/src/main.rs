@@ -31,10 +31,13 @@ fn main() {
     let months = ["Январь", "Февраль", "Март", "Апрель", "Май"];
     println!("{}", months[0]);
     println!("{}", months[2]);
-    second_function("~HI~");
-    
+    let i = {
+        9 + 4
+    };
+    println!("{}", second_function(i));
 }
 
-fn second_function(i: &str) {
+fn second_function(i: i32) -> &'static str {
     println!("second fun, arg = {}", i);
+    "RET"
 }
