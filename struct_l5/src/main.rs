@@ -10,6 +10,11 @@ fn main() {
     println!("====================");
     print_user(user2);
 
+    let color = Color(1,1,1,);
+    println!("{} {} {}", color.0, color.1, color.2);
+    let color = build_color(111);
+    println!("{} {} {}", color.0, color.1, color.2);
+
 }
 
 fn print_user(user: User) {
@@ -20,6 +25,14 @@ fn print_user(user: User) {
              user.sign_in_count
     );
 }
+
+struct Color(i32, i32, i32);
+fn build_color(i: i32) -> Color{
+    Color(
+        i, 32, 32
+        )
+}
+struct Point(i32, i32, i32);
 
 struct User {
     username: String,
